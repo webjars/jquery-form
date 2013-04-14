@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-form</artifactId>
-    <version>3.28.0-2013.02.06</version>
+    <version>3.28.0-2013.02.06-SNAPSHOT</version>
     <name>jQuery Form Plugin</name>
     <description>WebJar for jQuery Form Plugin</description>
     <url>http://webjars.org</url>
