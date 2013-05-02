@@ -3,6 +3,6 @@
 // Ensure any request for this webjar brings in jQuery.
 requirejs.config({
     shim: {
-        "jquery.form": [ 'webjars!jquery.js' ]
+        "jquery-form": [ 'webjars!jquery.js' ]
     }
 });
