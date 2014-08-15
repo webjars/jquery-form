@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-form</artifactId>
-    <version>3.28.0-2014.02.06-1-SNAPSHOT</version>
+    <version>3.28.0-2013.02.06-2-SNAPSHOT</version>
     <name>jQuery Form Plugin</name>
     <description>WebJar for jQuery Form Plugin</description>
     <url>http://webjars.org</url>
@@ -48,7 +48,7 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
-            <version>1.8.3</version>
+            <version>1.11.1</version>
         </dependency>
     </dependencies>
 
@@ -58,10 +58,10 @@
         <upstream.url>http://malsup.github.com</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <requirejs>
-        {
-        "paths": { "jquery-form": "jquery.form" },
-        "shim": { "jquery-form": [ "jquery" ] }
-        }
+            {
+                "paths": { "jquery-form": "jquery.form" },
+                "shim": { "jquery-form": [ "jquery" ] }
+            }
         </requirejs>
     </properties>
 
@@ -89,7 +89,19 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>2.5</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.5.1</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>sonatype-nexus-staging</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
             </plugin>
         </plugins>
         <resources>
