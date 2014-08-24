@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-form</artifactId>
-    <version>3.28.0-2013.02.06-3</version>
+    <version>3.28.0-2014.02.06-3-SNAPSHOT</version>
     <name>jQuery Form Plugin</name>
     <description>WebJar for jQuery Form Plugin</description>
     <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
         <url>http://github.com/webjars/jquery-form</url>
         <connection>scm:git:https://github.com/webjars/jquery-form.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-form.git</developerConnection>
-        <tag>jquery-form-3.28.0-2013.02.06-3</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <dependencies>
