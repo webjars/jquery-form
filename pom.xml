@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-form</artifactId>
-    <version>4.2.1-SNAPSHOT</version>
+    <version>4.2.1</version>
     <name>jQuery Form Plugin</name>
     <description>WebJar for jQuery Form Plugin</description>
     <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
         <url>http://github.com/webjars/jquery-form</url>
         <connection>scm:git:https://github.com/webjars/jquery-form.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-form.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jquery-form-4.2.1</tag>
     </scm>
 
     <dependencies>
@@ -77,9 +77,9 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <mkdir dir="${destDir}"/>
-                                <get src="${upstream.url}/jquery.form.min.js" dest="${destDir}"/>
-                                <get src="${upstream.url}/jquery.form.min.js.map" dest="${destDir}"/>
+                                <mkdir dir="${destDir}" />
+                                <get src="${upstream.url}/jquery.form.min.js" dest="${destDir}" />
+                                <get src="${upstream.url}/jquery.form.min.js.map" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
